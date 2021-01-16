@@ -9,7 +9,7 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo "> Check current activated application pid"
 
-CURRENT_PID=$(pgrep -fl springboot-start-project | grep jar | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl $PROJECT_NAME | grep java | awk '{print $1}')
 
 echo "> Current activated application pid: $CURRENT_PID"
 
